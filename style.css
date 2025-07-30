@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0e0e0, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.amount input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.amount input:focus {
+  outline: none;
+  border-color: #0077b6;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.from, .to {
+  flex: 1;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 6px 10px;
+  margin-top: 5px;
+  transition: border-color 0.3s;
+}
+
+.select-container:hover {
+  border-color: #0077b6;
+}
+
+.select-container img {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+select {
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+}
+
+select:focus {
+  outline: none;
+}
+
+select option {
+  color: #333;
+}
+
+.fa-arrow-right-arrow-left {
+  font-size: 18px;
+  margin: 0 10px;
+  color: #0077b6;
+}
+
+.msg {
+  text-align: center;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #0077b6;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #005f8a;
+  transform: translateY(-2px);
+}
